@@ -1,0 +1,126 @@
+.container-fluid{
+    padding: 0 10%;
+}
+.navbar-right .dropdown{
+    display: none;
+}
+.jumbotron{
+    background-image: linear-gradient(to right, #020031, #6d3353);
+    margin-bottom: 10px;
+}
+.jumbotron .container{
+    color: #fff;
+    padding: 90px 0 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 450px;
+}
+.jumbotron .container h1{
+    font-size: 90px;
+    font-weight: bold;
+}
+.jumbotron .container p{
+    font-size: 25px;
+}
+.jumbotron .container p a{
+    color: #fff;
+}
+.jumbotron .container a{
+    color: #999;
+    transition: color 1s;
+}
+.jumbotron .container a:hover{
+    color: #fff;
+}
+.pager{
+    padding: 0 0 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+.pager li{
+    padding: 0 10px 0 10px;
+    border-right: 1px solid #ddd;
+    cursor: pointer;
+}
+.pager li:last-of-type{
+    border: none;
+}
+.page-header{
+    display: flex;
+    justify-content: center;
+}
+.row{
+    margin: 0 5%;
+    text-align: center;
+}
+.row .thumbnail{
+    height: 350px;
+}
+.row .thumbnail h3{
+    color: #337ab7;
+}
+.row .thumbnail a{
+    color: #999;
+}
+.row .thumbnail p{
+    margin-top: 10px;
+}
+@media (max-width: 1200px) {
+    .navbar-right .btn{
+        display: inline-block;
+    }
+    .container-fluid{
+        padding: 0 5%;
+    }
+    .navbar-brand{
+        display: none;
+    }
+    .navbar-right li{
+        display: none;
+    }
+    .col-md-3{
+        width: 25%;
+    }
+}
+@media (max-width: 1070px) {
+    .col-sm-6{
+        width: 50%;
+    }
+    .container-fluid{
+        padding: 0 5%;
+    }
+    .navbar-brand{
+        display: block;
+    }
+    .nav.navbar-nav.left{
+        display: none;
+    }
+    .nav.navbar-nav.navbar-right .dropdown{
+        display: block;
+    }
+    .navbar-right .dropdown{
+        display: block;
+    }
+    .navbar-right .dropdown .dropdown-menu li{
+        display: block;
+    }
+    .jumbotron .container h1{
+        font-size: 60px;
+        font-weight: bold;
+    }
+    .jumbotron .container p{
+        font-size: 20px;
+    }
+    .jumbotron .container p a{
+        color: #fff;
+    }
+    .jumbotron .container a{
+        color: #999;
+    }
+}
+@media (max-width: 800px) {
+    .col-xs-12{
+        width: 90%;
+    }
+}
